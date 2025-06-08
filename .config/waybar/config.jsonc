@@ -3,15 +3,15 @@
 {
     "layer": "top",
     "position": "top",
-    "height": 24, //36
-    "margin": 10, // stick with the default for now
+    "height": 24,
+    "margin": 10,
     "spacing": 4,
     "exclusive": true,
     "gtk-layer-shell": true,
     "passthrough": false,
     "fixed-center": true,
     "modules-left": ["custom/logo", "clock", "custom/updates"],
-    "modules-center": ["hyprland/workspaces"], // hyprland/window
+    "modules-center": ["hyprland/workspaces"],
     "modules-right": ["backlight", "cpu", "battery", "pulseaudio", "tray"],
 
     "wlr/workspaces": {
@@ -35,7 +35,7 @@
     },
     "clock": {
         "tooltip": false,
-        "interval": 1, // otherwise it gets updated once a min (60s) 
+        "interval": 1,
         "format": " {:%H:%M:%S %a %d}"
     },
     "clock#date": {
@@ -53,7 +53,6 @@
     },
     "pulseaudio": {
         "format": "{icon} {volume}%",
-        // "format-muted": "  muted",
         "format-muted": " ",
         "format-icons": {
             "headphone": " ",
@@ -85,9 +84,8 @@
         },
         "format": "{icon}  {capacity}%",
         "format-charging": "󰂄 {capacity}%",
-        "format-plugged": " 󰂄 {capacity}%", // \ueb2d // ﮣ -> good icon, but obsolete :(
+        "format-plugged": " 󰂄 {capacity}%",
         "format-icons": ["", "", "", "", ""],
-        // "max-length": 25
     },
     "backlight": {
         "device":"intel_backlight",
@@ -112,7 +110,6 @@
 	    "updated": "",
 	},
 	"exec": "$HOME/.config/hypr/scripts/waybar-updates -l 100",
-	"on-click": "pypr toggle updatez && hyprctl dispatch bringactivetotop"
     },
     "wlr/taskbar": {
 	"format": "{icon}",
