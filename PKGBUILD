@@ -9,14 +9,13 @@ depends=(
     'waybar'
     'ttf-jetbrains-mono-nerd'
 )
-source=('.config')
+source=()
 optdepends=('ttf-jetbrains-mono-nerd: Default nerd font')
 install=stratos-waybar-config.install
-md5sums=('SKIP')
 prepare() {
     cp -r "$startdir/.config/" "$srcdir/"
 }
 package() {
     install -d "$pkgdir/etc/skel/.config"
-    cp -r "$srcdir/waybar/" "$pkgdir/etc/skel/.config/"
+    cp -r "$srcdir/.config/waybar/" "$pkgdir/etc/skel/.config/"
 }
