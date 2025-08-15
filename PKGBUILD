@@ -5,13 +5,18 @@ pkgrel=1
 pkgdesc="Waybar configuration for StratOS"
 arch=('any')
 license=('GPL3')
-depends=('waybar')
+depends=(
+    'waybar'
+    'ttf-jetbrains-mono-nerd'
+)
 source=('.config')
+optdepends=('ttf-jetbrains-mono-nerd: Default nerd font')
+install=stratos-waybar-config.install
 md5sums=('SKIP')
-
+prepare() {
+    cp -r "$startdir/.config/" "$srcdir/"
+}
 package() {
     install -d "$pkgdir/etc/skel/.config"
-    cp -r "$srcdir/.config/waybar" "$pkgdir/etc/skel/.config/"
-    echo "Configuration files have been copied to /etc/skel."
-    echo "You may copy these files to ~/.config/ and make any changes you wish."
+    cp -r "$srcdir/waybar/" "$pkgdir/etc/skel/.config/"
 }
