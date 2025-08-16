@@ -1,14 +1,15 @@
-# Maintainer: @zstg <zestig@duck.com>
-pkgname=stratos-waybar-config
+# Maintainer: @magitian <magitian@duck.com>
+pkgname=stratos-waybar-niri-config
 pkgver=1.0
 pkgrel=1
-pkgdesc="Waybar configuration for StratOS"
+pkgdesc="Waybar (Niri) configuration for StratOS"
 arch=('any')
 license=('GPL3')
 depends=(
     'waybar'
     'ttf-jetbrains-mono-nerd'
 )
+provides=('stratos-waybar-config')
 source=()
 optdepends=('ttf-jetbrains-mono-nerd: Default nerd font')
 install=stratos-waybar-config.install
