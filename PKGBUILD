@@ -12,7 +12,7 @@ depends=(
 provides=('stratos-waybar-config')
 source=()
 optdepends=('ttf-jetbrains-mono-nerd: Default nerd font')
-install=stratos-waybar-config.install
+install=stratos-waybar-niri-config.install
 prepare() {
     cp -r "$startdir/.config/" "$srcdir/"
 }
