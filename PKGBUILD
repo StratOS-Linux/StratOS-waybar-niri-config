@@ -9,7 +9,7 @@ depends=(
     'waybar'
     'ttf-jetbrains-mono-nerd'
 )
-provides=('stratos-waybar-config')
+provides=('stratos-waybar-niri-config')
 source=()
 optdepends=('ttf-jetbrains-mono-nerd: Default nerd font')
 install=stratos-waybar-niri-config.install
