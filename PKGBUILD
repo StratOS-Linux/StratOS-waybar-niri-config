@@ -1,7 +1,7 @@
 # Maintainer: @magitian <magitian@duck.com>
 pkgname=stratos-waybar-niri-config
 pkgver=1.0
-pkgrel=1
+pkgrel=3
 pkgdesc="Waybar (Niri) configuration for StratOS"
 arch=('any')
 license=('GPL3')
