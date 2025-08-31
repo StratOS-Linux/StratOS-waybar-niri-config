@@ -2,7 +2,7 @@
 pkgname=stratos-waybar-niri-config
 pkgver=1.0
 pkgrel=3
-pkgdesc="Waybar (Niri) configuration for StratOS"
+pkgdesc="Waybar configuration for StratOS' Niri spin"
 conflicts=('stratos-waybar-hyprland-config')
 arch=('any')
 license=('GPL3')
